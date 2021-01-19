@@ -6,10 +6,13 @@ import history from "./services/history";
 
 import "./config/ReactototronConfig";
 
+import GlobalStyle from "./Styles/global";
+
 function App() {
     return (
         <Router history={history}>
             <Routes />
+            <GlobalStyle />
         </Router>
     );
 }
