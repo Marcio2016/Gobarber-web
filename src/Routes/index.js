@@ -7,14 +7,16 @@ import SignUp from "../pages/SignUp";
 import Dashboard from "../pages/Dashboard";
 import Profile from "../pages/Profile";
 
-const Routes = () => {
-    <Switch>
-        <Route path="/" exact component={SignIn} />
-        <Route path="/register" component={SignUp} />
+function Routes() {
+    return (
+        <Switch>
+            <Route path="/" exact component={SignIn} />
+            <Route path="/register" component={SignUp} />
 
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/profile" component={Profile} />
-    </Switch>;
-};
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/profile" component={Profile} />
+        </Switch>
+    );
+}
 
 export default Routes;
