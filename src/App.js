@@ -1,20 +1,20 @@
-import React from "react";
-import { Router } from "react-router-dom";
+import React from 'react';
+import { Router } from 'react-router-dom';
 
-import Routes from "./Routes";
-import history from "./services/history";
+import Routes from '~/Routes';
+import history from '~/services/history';
 
-import "./config/ReactototronConfig";
+import './config/ReactototronConfig';
 
-import GlobalStyle from "./Styles/global";
+import GlobalStyle from './Styles/global';
 
 function App() {
-    return (
-        <Router history={history}>
-            <Routes />
-            <GlobalStyle />
-        </Router>
-    );
+  return (
+    <Router history={history}>
+      <Routes />
+      <GlobalStyle />
+    </Router>
+  );
 }
 
 export default App;
