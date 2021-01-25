@@ -5,7 +5,7 @@ import './config/ReactototronConfig';
 
 import Routes from '~/Routes';
 import history from '~/services/history';
-import store from './store';
+import { store } from './store';
 
 import GlobalStyle from './Styles/global';
 
