@@ -1,19 +1,22 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
+import './config/ReactototronConfig';
 
 import Routes from '~/Routes';
 import history from '~/services/history';
-
-import './config/ReactototronConfig';
+import store from './store';
 
 import GlobalStyle from './Styles/global';
 
 function App() {
   return (
-    <Router history={history}>
-      <Routes />
-      <GlobalStyle />
-    </Router>
+    <Provider store={store}>
+      <Router history={history}>
+        <Routes />
+        <GlobalStyle />
+      </Router>
+    </Provider>
   );
 }
 
