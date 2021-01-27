@@ -1,10 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Wrapper, Content } from './styles';
 
-// eslint-disable-next-line react/prop-types
-function AuthLayout({ children }) {
+export default function AuthLayout({ children }) {
   return (
     <Wrapper>
       <Content>{children}</Content>
@@ -15,5 +15,3 @@ function AuthLayout({ children }) {
 AuthLayout.prototype = {
   children: PropTypes.element.isRequired,
 };
-
-export default AuthLayout;
